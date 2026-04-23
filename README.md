@@ -9,7 +9,8 @@ A professional, end-to-end data pipeline for monitoring and analyzing agricultur
 
 This project follows a complete medallion architecture pipeline from raw data collection to final business intelligence:
 
-<img width="1071" height="154" alt="image" src="https://github.com/user-attachments/assets/c06adc26-9a99-4b78-95ec-475f55175bdc" />
+<img width="1068" height="151" alt="image" src="https://github.com/user-attachments/assets/ee5c4a53-d9fd-4a10-9c57-1dab87d064b7" />
+
 
 
 ### Pipeline Stages
