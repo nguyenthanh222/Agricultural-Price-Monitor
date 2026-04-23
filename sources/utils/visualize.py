@@ -221,20 +221,19 @@ python -m sources.utils.analysis
     # === Biểu đồ cột so sánh 3 category ===
     st.subheader("📊 Biểu đồ cột - So sánh giá TB các category")
     
-    df_category_stats = df_plot.groupby(["date", "category", "unit_normalized"]).agg({
+    df_category_stats = df_plot.groupby(["category", "unit_normalized"]).agg({
         "avg_price": ["mean", "min", "max"]
     }).reset_index()
-    df_category_stats.columns = ["date", "category", "unit_normalized", "mean", "min", "max"]
+    df_category_stats.columns = ["category", "unit_normalized", "mean", "min", "max"]
     df_category_stats["category"] = df_category_stats["category"].astype(str)
     df_category_stats["unit_normalized"] = df_category_stats["unit_normalized"].astype(str)
-    df_category_stats["date_str"] = df_category_stats["date"].dt.strftime("%d/%m/%Y")
-    df_category_stats["category_date"] = df_category_stats["category"] + " - " + df_category_stats["date_str"]
+    df_category_stats["category_unit"] = df_category_stats["category"] + " (" + df_category_stats["unit_normalized"] + ")"
     df_category_stats = df_category_stats.dropna(subset=["mean"])
 
     if not df_category_stats.empty:
         fig_bar = go.Figure()
         fig_bar.add_trace(go.Bar(
-            x=df_category_stats["category_date"],
+            x=df_category_stats["category_unit"],
             y=df_category_stats["mean"],
             customdata=np.stack([df_category_stats["min"], df_category_stats["max"], df_category_stats["unit_normalized"]], axis=-1),
             marker_color="#1f77b4",
