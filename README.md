@@ -9,19 +9,8 @@ A professional, end-to-end data pipeline for monitoring and analyzing agricultur
 
 This project follows a complete medallion architecture pipeline from raw data collection to final business intelligence:
 
-```
-Web Scraper (VNSAT)
-       ↓
-   Bronze Layer (CSV)
-       ↓
-   Silver Layer (Normalized)
-       ↓
-   Gold Layer (Aggregated)
-       ↓
-MongoDB Ingestion
-       ↓
-Streamlit Dashboard (Real-time Visualizations)
-```
+<img width="8192" height="1202" alt="Web Scraper Data Ingestion-2026-04-23-140417" src="https://github.com/user-attachments/assets/731b90f7-ef06-4563-8942-f7d40c320642" />
+
 
 ### Pipeline Stages
 
