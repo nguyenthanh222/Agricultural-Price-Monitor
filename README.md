@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 📊 Vietnam Agricultural Price Monitor — Modern Data Pipeline
 
 ![Python](https://img.shields.io/badge/Python-3.13-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-1.56-green) ![MongoDB](https://img.shields.io/badge/MongoDB-Latest-green) ![dbt](https://img.shields.io/badge/dbt-Core-orange) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-blue)
