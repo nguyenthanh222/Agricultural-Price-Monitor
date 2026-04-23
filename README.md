@@ -9,7 +9,7 @@ A professional, end-to-end data pipeline for monitoring and analyzing agricultur
 
 This project follows a complete medallion architecture pipeline from raw data collection to final business intelligence:
 
-<img width="8192" height="1202" alt="Web Scraper Data Ingestion-2026-04-23-140417" src="https://github.com/user-attachments/assets/731b90f7-ef06-4563-8942-f7d40c320642" />
+<img width="1071" height="154" alt="image" src="https://github.com/user-attachments/assets/c06adc26-9a99-4b78-95ec-475f55175bdc" />
 
 
 ### Pipeline Stages
