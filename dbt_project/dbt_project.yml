@@ -1,0 +1,12 @@
+name: gold_price_monitoring
+version: '1.0'
+config-version: 2
+profile: default
+source-paths: ["models"]
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_modules"
+models:
+  gold_price_monitoring:
+    +materialized: view

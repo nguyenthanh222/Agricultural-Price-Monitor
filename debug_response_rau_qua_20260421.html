@@ -1,0 +1,768 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" /><title>
+	Tra cuu gia nong san
+</title><meta name="keywords" content="báo cáo ngành hàng, nông sản, lúa gạo, chè, cà phê, đường, sữa, hạt tiêu, hạt điều, thịt và thực phẩm, thủy sản, thức ăn chăn nuôi, số liệu thống kê, giá nông sản" /><meta property="og:site_name" content="agro.gov.vn" /><meta id="ctl00_meta_url" property="og:url" /><meta property="og:type" content="website" /><meta id="ctl00_meta_title" property="og:title" /><meta id="ctl00_meta_description" property="og:description" /><meta id="ctl00_meta_image" property="og:image" /><meta name="google-site-verification" content="4-APZDJCsPoA1J3bHHBftQoSdHcBXq96S-tXm9JN4_c" />
+    <!-- Responsive -->
+    <link rel="stylesheet" href="../css/slick.css" /><link rel="stylesheet" href="../css/slick-theme.css" /><link rel="stylesheet" href="../css/animition.css" /><link rel="stylesheet" href="../css/ball.css" /><link rel="stylesheet" href="../css/date.css" /><link rel="stylesheet" href="../css/main.css" /><link rel="stylesheet" href="../css/menu.css" /><link rel="stylesheet" href="../css/menu_drop.css" /><link rel="stylesheet" href="../css/send_alert.css" /><link rel="stylesheet" href="../css/tabs.css" /><link rel="stylesheet" href="../css/bootstrap.css" /><link rel="stylesheet" href="../css/swiper.min.css" /><link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- Responsive -->
+    <link rel="stylesheet" href="../css/responsive/media.css?t=&lt;%= DateTime.Now.Ticks %>" />
+    
+    <!-- Script -->
+    <script type="text/javascript" src="../js/jquery_3.2.1.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link href="../css/font-awesome.min.css?ver=123" rel="stylesheet" type="text/css" />
+       <script type="text/javascript" src="../js/jquery.timepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="../js/jquery.timepicker.css" />
+ 
+    <style>
+        .shadow12 {
+            font-family: Roboto Bold;
+            font-size: 26px;
+            color: rgba(255, 255, 255, 1);
+            text-shadow: 2px 2px 0px rgba(150, 82, 52, 1), 2px -2px 0px rgba(150, 82, 52, 1), -2px 2px 0px rgba(150, 82, 52, 1), -2px -2px 0px rgba(150, 82, 52, 1), 2px 0px 0px rgba(150, 82, 52, 1), 0px 2px 0px rgba(150, 82, 52, 1), -2px 0px 0px rgba(150, 82, 52, 1), 0px -2px 0px rgba(150, 82, 52, 1);
+        }
+
+        .shadow12_f20 {
+            font-family: Roboto Bold;
+            font-size: 20px;
+            color: rgba(255, 255, 255, 1);
+            text-shadow: 2px 2px 0px rgba(150, 82, 52, 1), 2px -2px 0px rgba(150, 82, 52, 1), -2px 2px 0px rgba(150, 82, 52, 1), -2px -2px 0px rgba(150, 82, 52, 1), 2px 0px 0px rgba(150, 82, 52, 1), 0px 2px 0px rgba(150, 82, 52, 1), -2px 0px 0px rgba(150, 82, 52, 1), 0px -2px 0px rgba(150, 82, 52, 1);
+        }
+
+        .shadow7 {
+            text-shadow: 0px 0px 5px #638253;
+        }
+
+        .shadow8 {
+            font-family: Roboto Bold;
+            font-size: 22px;
+            text-shadow: 3px 3px 5px rgba(0, 128, 0, 1);
+        }
+        body {
+            margin: 0;
+            font-family: Roboto !important ;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body style='background-image: url("/images/2013/anhnen/06.jpg"); background-repeat:no-repeat;background-attachment: fixed;'>
+    <form name="aspnetForm" method="post" action="/vn/nguonwmy.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNzU4OTIyODUwDxYCHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEWAmYPZBYCAgEQZGQWAgIHD2QWDgICDxAPFgYeDURhdGFUZXh0RmllbGQFDE5nw6BuaF9ow6BuZx4ORGF0YVZhbHVlRmllbGQFDE5nw6BuaF9ow6BuZx4LXyFEYXRhQm91bmRnZBAVBBktLSBDaOG7jW4gbmfDoG5oIGjDoG5nIC0tCEPDoCBwaMOqCkzDumEgZ+G6oW8KUmF1LCBxdeG6oxUEAAhDw6AgcGjDqgpMw7phIGfhuqFvClJhdSwgcXXhuqMUKwMEZ2dnZxYBAgNkAgMPEA8WCB8BBRJOaMOzbV9z4bqjbl9waOG6qW0fAgUSTmjDs21fc+G6o25fcGjhuqltHwNnHgdWaXNpYmxlZ2QQFQMfLS0gQ2jhu41uIG5ow7NtIHPhuqNuIHBo4bqpbSAtLQ5SYXUgY+G7pyBxdeG6owpUcsOhaSBjw6J5FQMADlJhdSBj4bunIHF14bqjClRyw6FpIGPDonkUKwMDZ2dnFgFmZAIEDxBkZBYAZAIFDxBkZBYAZAIGDxBkZBYBZmQCCA8QZGQWAGQCCQ9kFgJmD2QWBAIDDzwrABECAA8WBh4IUGFnZVNpemUCFB8DZx4LXyFJdGVtQ291bnRmZAwUKwAEFggeBE5hbWUFEFTDqm5fbeG6t3RfaMOgbmceCklzUmVhZE9ubHloHgRUeXBlGSsCHglEYXRhRmllbGQFEFTDqm5fbeG6t3RfaMOgbmcWCB8HBQ9UaOG7i190csaw4budbmcfCGgfCRkrAh8KBQ9UaOG7i190csaw4budbmcWCB8HBQVOZ8OgeR8IaB8JGSlcU3lzdGVtLkRhdGVUaW1lLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkfCgUFTmfDoHkWCB8HBQRHacOhHwhoHwkZKVpTeXN0ZW0uRG91YmxlLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkfCgUER2nDoWQCBQ8PFgIeBFRleHQFD1h14bqldCByYSBleGNlbBYCHgdvbmNsaWNrBRFyZXR1cm4gY2hlY2tGcm0oKWQYAgUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgUFKWN0bDAwJG1haW5jb250ZW50JGhp4buHbl9jw6FjX3RyxrDhu51uZyQwBSljdGwwMCRtYWluY29udGVudCRoaeG7h25fY8OhY190csaw4budbmckMQUpY3RsMDAkbWFpbmNvbnRlbnQkaGnhu4duX2PDoWNfdHLGsOG7nW5nJDIFKWN0bDAwJG1haW5jb250ZW50JGhp4buHbl9jw6FjX3RyxrDhu51uZyQzBSljdGwwMCRtYWluY29udGVudCRoaeG7h25fY8OhY190csaw4budbmckMwUbY3RsMDAkbWFpbmNvbnRlbnQkR3JpZFZpZXcxDzwrAAwBCGZkIcg58ONsKm76JuksFEiMtO0HUVjh2RPmPqJvFD/7Hig=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=MRZr6U9hxgoW-io6HwRMYLJnV4DJWmLymTRIL6C4ReKQdKOTyY55QDLEMlpHv6jCUw3pbWb6dYjrYPDLZSgpMZzGBQRqr-4TVWrJyDszusg1&amp;t=638883524380000000" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=GbSv49Ftq8zdWxNMOy9O55ABCoU_5ghYJRvHvxl0rS7FUiGONfhMVveKiDXpVpNjZQ6s7XATq_T94OxHIev_ZX-2siDTpwnb42aP5omLC06oURBBht_YOlXZpbt8SECY0&amp;t=51e37521" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=E5gIiqn0esn0eET43b3_cvSBfLrt2-wF2TuTJPM7ZhylueOlygMQYp-ycgLJQrUNi6mQnhP6KuNJ3gmgEE451ZQdEYqNWMg2oYo0mxEwI-J1EcfnonNdoIZK7dnPBuANBkZYFg_9lmSJLCNbKo9WeA2&amp;t=51e37521" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="75373839" />
+</div>
+         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC3HWpKFhsstIb7ktCbjWCxqs1cu-38z28"></script>
+        <div id="wrapper" style="max-width: 1920px; position: relative;">
+
+            <div id="gop_top" style="background-color:ghostwhite">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="nav_header">
+                                <div class="logo"  style="margin-top: 18px;"> <a href="../vn/default.aspx">
+                                    <img src="../img/0.png" style="height:65px" />
+                                   <span class="" style="color: #000;font-size: 32px;font-weight: bold;">THÔNG TIN THỊ TRƯỜNG NÔNG SẢN</span></a>
+                                </div>
+                                <div class="contact_menu_top">                                    
+                                    <div class="float-end">
+                                        <img src="../img/ispae.png" style="height:65px" />                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="nav" class="menu_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="logo_mobile">
+                                <a href="../vn/default.aspx"><span class="shadow12_f20">THÔNG TIN THỊ TRƯỜNG NÔNG SẢN</span></a>
+                            </div>
+                            <div id="nav_sticky" class="menu-content overlay">
+                                <nav class="menu">
+                                    <ul>
+                                            <li class="menu__item"><a href="../vn/default.aspx"><img src="../img/home.png" alt="" /></a></li>
+    <li class="menu__item"><a href="../vn/faq_gioithieu.html">Giới thiệu</a></li>
+    <li class="menu__item to-left">
+        <a href="../vn/xc0_tin-tuc.html" class="menu__link">Tin tức<i class="fa fa-sort-down"></i></a>
+        <ul class="menu__sub-menu">
+            <li class="menu__sub-menu__item"><a href="../vn/xc9_Lua-gao.html">Lúa gạo</a></li>
+            <li class="menu__sub-menu__item"><a href="../vn/xc2_Ca-phe.html">Cà phê</a></li>
+			<li class="menu__sub-menu__item"><a href="../vn/xc6_rau-qua.html">Rau quả</a></li>
+
+        </ul>
+    </li>
+
+    <li class="menu__item"><a href="../vn/bantin.aspx">Bản tin</a></li>
+    <li class="menu__item"><a href="../vn/baocao.aspx">Báo cáo</a>    </li>
+
+    <li class="menu__item to-left">
+        <a href="#" class="menu__link">Dữ liệu<i class="fa fa-sort-down"></i></a>
+        <ul class="menu__sub-menu">
+            <li class="menu__sub-menu__item"><a href="../vn/nguonwmy.aspx">Giá</a></li>
+            <li class="menu__sub-menu__item"><a href="../vn/dulieu_groups.aspx?cat_id=95">Sản xuất lúa gạo</a></li>
+            <li class="menu__sub-menu__item"><a href="../vn/dulieu_groups.aspx?cat_id=62">Thương mại lúa gạo</a></li>
+            <li class="menu__sub-menu__item"><a href="../vn/dulieu_groups.aspx?cat_id=99">Sản xuất cà phê</a></li>
+            <li class="menu__sub-menu__item"><a href="../vn/dulieu_groups.aspx?cat_id=100">Thương mại cà phê</a></li>
+            <li class="menu__sub-menu__item"><a href="../vn/dulieu_groups.aspx?cat_id=101">Sản xuất rau quả</a></li>
+            <li class="menu__sub-menu__item"><a href="../vn/dulieu_groups.aspx?cat_id=102">Thương mại rau quả</a></li>
+            <li class="menu__sub-menu__item"><a href="../vn/dulieudoanhnghiep.aspx">Doanh nghiệp</a></li>
+            <li class="menu__sub-menu__item"><a href="../vn/dieutra.aspx">Điều tra hàng năm</a></li>
+            <li class="menu__sub-menu__item"><a href="../vn/baocao_chinhsach.aspx">Chính sách</a></li>
+        </ul>
+    </li>
+
+
+
+                                        
+                                        <li class="timkiem mobile">                                           
+                                            <input name="ctl00$kw" type="text" id="ctl00_kw" class="inputnhap" autocomplete="off" placeholder="Tìm kiếm..." />
+                                            <button onclick="__doPostBack('ctl00$mobile_tìm_kiếm','')" id="ctl00_mobile_tìm_kiếm" type="submit">
+                                                <img src="../images/search.svg"></button>                                           
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="timkiem desktop">
+                                <div id="ctl00_panel1" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl00_desktop_tìm_kiếm&#39;)">
+	
+                                <input name="ctl00$keyword" type="text" id="ctl00_keyword" class="inputnhap" autocomplete="off" placeholder="Tìm kiếm..." />
+                                    <a id="ctl00_desktop_tìm_kiếm" class="nuttk" href="javascript:__doPostBack(&#39;ctl00$desktop_tìm_kiếm&#39;,&#39;&#39;)"><img src="../images/search.svg"></a>   
+                                    
+</div> 
+                            </div>
+                            <div id="nav-icon" class="menu-button visible-xs">
+                                <span class="burger-icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="back_all" style="position: relative;">
+                <!-- Content -->
+
+                <div class="row" style="min-height:400px">
+                    <div class="col-lg-12">
+                        <input type="hidden" name="ctl00$catid" id="ctl00_catid" value="0" />
+                        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager_Sitemaster', 'aspnetForm', ['tctl00$maincontent$UpdatePanel2',''], [], [], 36000, 'ctl00');
+//]]>
+</script>
+
+                        <span id="ctl00_dulieu_id" style="display:none"></span>
+                        <span id="ctl00_lbl_loi"></span>
+                        
+    <div class="container ontop" id="top_div">
+        <div id="background_div" style="position: absolute; background-color: #fff; opacity: 0.9; z-index: -1"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mt-5">
+                    <h3 class="title_center shadow12">CƠ SỞ DỮ LIỆU GIÁ NÔNG SẢN </h3>
+                    <div class="xoamargin mt-5 mb-5">
+                        <div style="background-color: #fff; padding-left: 20px" class="pt-2 pb-5">
+                            <a class="btn btn-primary" href="nguonwmy.aspx">Sang dạng bảng</a>
+                            <a class="btn btn-success" href="tm.aspx">Sang dạng đồ thị</a><hr />
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><a href="../vn/nguonwmy.aspx">Giá</a></li>
+                                        <li class="list-group-item"><a href="../vn/dulieu_groups.aspx?cat_id=95">Sản xuất lúa gạo</a></li>
+                                        <li class="list-group-item"><a href="../vn/dulieu_groups.aspx?cat_id=62">Thương mại lúa gạo</a></li>
+                                        <li class="list-group-item"><a href="../vn/dulieu_groups.aspx?cat_id=99">Sản xuất cà phê</a></li>
+                                        <li class="list-group-item"><a href="../vn/dulieu_groups.aspx?cat_id=100">Thương mại cà phê</a></li>
+                                        <li class="list-group-item"><a href="../vn/dulieu_groups.aspx?cat_id=101">Sản xuất rau quả</a></li>
+                                        <li class="list-group-item"><a href="../vn/dulieu_groups.aspx?cat_id=102">Thương mại rau quả</a></li>
+                                        <li class="list-group-item"><a href="../vn/dieutra.aspx">Điều tra hàng năm</a></li>
+                                        <li class="list-group-item"><a href="../vn/dulieudoanhnghiep.aspx">Doanh nghiệp</a></li>
+                                        <li class="list-group-item"><a href="../vn/baocao_chinhsach.aspx">Chính sách</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-9">
+                                    Khoảng thời gian<br />
+                                    Từ ngày<input name="ctl00$maincontent$tu_ngay" type="text" value="01/04/2026" id="ctl00_maincontent_tu_ngay" class="cssdate2" style="width:100px;" />
+                                    đến ngày<input name="ctl00$maincontent$den_ngay" type="text" value="20/04/2026" id="ctl00_maincontent_den_ngay" class="cssdate2" style="width:100px;" /><br />
+
+                                    <select name="ctl00$maincontent$Ngành_hàng" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$maincontent$Ngành_hàng\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_maincontent_Ngành_hàng">
+	<option value="">-- Chọn ng&#224;nh h&#224;ng --</option>
+	<option value="Cà phê">C&#224; ph&#234;</option>
+	<option value="Lúa gạo">L&#250;a gạo</option>
+	<option selected="selected" value="Rau, quả">Rau, quả</option>
+
+</select>
+                                    <select name="ctl00$maincontent$Nhóm_sản_phẩm" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$maincontent$Nhóm_sản_phẩm\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_maincontent_Nhóm_sản_phẩm">
+	<option selected="selected" value="">-- Chọn nh&#243;m sản phẩm --</option>
+	<option value="Rau củ quả">Rau củ quả</option>
+	<option value="Trái cây">Tr&#225;i c&#226;y</option>
+
+</select>
+                                    
+                                    
+                                   <hr /> Xem theo<select name="ctl00$maincontent$Theo_thời_gian" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$maincontent$Theo_thời_gian\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_maincontent_Theo_thời_gian" class="required">
+	<option selected="selected" value="ngay">Ng&#224;y</option>
+	<option value="tuan">Tuần</option>
+	<option value="thang">Th&#225;ng</option>
+
+</select>
+
+                                    <input type="submit" name="ctl00$maincontent$Xem" value="Xem" id="ctl00_maincontent_Xem" />
+
+                                    <hr />
+                                    <b>Nhóm theo các trường</b>
+                                    <table id="ctl00_maincontent_hiện_các_trường" border="0">
+	<tr>
+		<td><input id="ctl00_maincontent_hiện_các_trường_0" type="checkbox" name="ctl00$maincontent$hiện_các_trường$0" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$maincontent$hiện_các_trường$0\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ctl00_maincontent_hiện_các_trường_0">Loại giá</label></td>
+	</tr><tr>
+		<td><input id="ctl00_maincontent_hiện_các_trường_1" type="checkbox" name="ctl00$maincontent$hiện_các_trường$1" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$maincontent$hiện_các_trường$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ctl00_maincontent_hiện_các_trường_1">Đơn vị tính</label></td>
+	</tr><tr>
+		<td><input id="ctl00_maincontent_hiện_các_trường_2" type="checkbox" name="ctl00$maincontent$hiện_các_trường$2" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$maincontent$hiện_các_trường$2\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ctl00_maincontent_hiện_các_trường_2">Loại tiền</label></td>
+	</tr><tr>
+		<td><input id="ctl00_maincontent_hiện_các_trường_3" type="checkbox" name="ctl00$maincontent$hiện_các_trường$3" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$maincontent$hiện_các_trường$3\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ctl00_maincontent_hiện_các_trường_3">Nguồn</label></td>
+	</tr>
+</table>
+                                </div>
+                            </div>
+                            <div id="ctl00_maincontent_UpdatePanel2">
+	
+                                    <div class="row">
+                                        <span id="ctl00_maincontent_lb_TieuDe" style="font-weight:bold;"></span>
+                                        <div>
+		<table class="table table-bordered table-hover stickyTableHeaders" cellspacing="0" rules="all" border="1" id="ctl00_maincontent_GridView1" style="border-collapse:collapse;">
+			<tr>
+				<td colspan="4">Không có dữ liệu.</td>
+			</tr>
+		</table>
+	</div>
+                                    </div>
+                                    
+                                
+</div>
+                        </div>
+                        </div> 
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+                        
+                        
+  <a href='https://videodownloader.win' target='_blank' style="display:none" id="link_video_downloader">video downloader</a>
+                    </div>
+                </div>
+
+            </section>
+
+           
+            <div class="row mt-5 "></div>        
+            <footer>
+                <div class="container" style="margin-bottom:50px">
+                    <div class="row">       
+                                <div class="col-md-7">
+                                    <h3 class="title_fot">
+                                  TRUNG TÂM THÔNG TIN VÀ DỊCH VỤ NÔNG NGHIỆP VÀ MÔI TRƯỜNG<BR />
+                                   VIỆN CHIẾN LƯỢC CHÍNH SÁCH NÔNG NGHIỆP VÀ MÔI TRƯỜNG<BR />
+                                   BỘ NÔNG NGHIỆP VÀ MÔI TRƯỜNG</h3>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="text-white">
+                                                <img src="../images/local.svg"/>Số 16 Thụy Khuê Tây Hồ Hà Nội<br>
+                                                <img src="../images/phone.svg" />Tel 04.62.93.86.32/04.3.9725154<br>
+                                                <img src="../images/email.svg" /> Email:info@agro.gov.vn
+                                            </div> 
+                                    </div> 
+                             
+                     
+                    </div>
+                </div>
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col-lg-12">
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+<script src="../js/swiper.min.js"></script>
+<script type="text/javascript" src="../js/init.js"></script>
+<script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/menu_header.js"></script>
+<script type="text/javascript" src="../js/jquery_ui.js"></script>
+<script type="text/javascript" src="../js/edit_js.js"></script>
+<script src="../js/slick.min.js"></script>
+<script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+<script src="../js/main.js"></script>
+<script type="text/javascript" src="../js/fancy2.js"></script>
+<script type="text/javascript" src="../js/fancy1.js"></script>
+<script type="text/javascript" src="../js/edit_slick.js"></script>
+<script type="text/javascript" src="../js/jquery.boxes.js"></script>
+<script type="text/javascript" src="../js/jquery.boxes.repopup.js"></script>
+<script type="text/javascript" src="../js/tablist.js"></script>
+
+
+     <script src="../ckfinder/ckfinder.js" type="text/javascript"></script>
+    <link href='../css/chosen.css' rel='stylesheet' />
+    <script src='../js/chosen.jquery.js'></script>
+
+    <script type="text/javascript" src="../js/jquery.timepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="../js/jquery.timepicker.css" />
+
+    <script type="text/javascript" src="../js/bootstrap-multiselect.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap-multiselect.css">
+    <script type="text/javascript" src="../JS/jquery.blockUI.js"></script>
+     <script type="text/javascript" src="../js/jquery.stickytableheaders.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../js/jquery.validate.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../js/messages_vi.js"></script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $.datepicker.regional["vi-VN"] =
+            {
+                closeText: "Đóng",
+                prevText: "Trước",
+                nextText: "Sau",
+                currentText: "Hôm nay",
+                monthNames: ["Tháng một", "Tháng hai", "Tháng ba", "Tháng tư", "Tháng năm", "Tháng sáu", "Tháng bảy", "Tháng tám", "Tháng chín", "Tháng mười", "Tháng mười một", "Tháng mười hai"],
+                monthNamesShort: ["Một", "Hai", "Ba", "Bốn", "Năm", "Sáu", "Bảy", "Tám", "Chín", "Mười", "M.một", "M.hai"],
+                dayNames: ["Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy"],
+                dayNamesShort: ["CN", "Hai", "Ba", "Tư", "Năm", "Sáu", "Bảy"],
+                dayNamesMin: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
+                weekHeader: "Tuần",
+                dateFormat: "dd/mm/yy",
+                firstDay: 1,
+                isRTL: false,
+                showMonthAfterYear: false,
+                yearSuffix: ""
+            };
+
+            $.datepicker.setDefaults($.datepicker.regional["vi-VN"]);
+        });
+        function kiemtra_batbuoc() {
+            $('#background_div').css({ 'height': $('#top_div').innerHeight() });
+            $('#background_div').css({ 'width': $('#top_div').innerWidth() - 50 });
+            chonfile();
+            hightlightrow();
+            $('.cssdate').each(function (i, obj) {
+                $(this).attr("autocomplete", "off");
+            });
+
+            $(".cssdate").datepicker({
+                dateFormat: "dd/mm/yy", changeMonth: true, changeYear: true,
+                yearRange: "-85:+30"
+            });
+            $('.cssdate2').each(function (i, obj) {
+                $(this).attr("autocomplete", "off");
+            });
+
+            $(".cssdate2").datepicker({
+                dateFormat: "dd/mm/yy", changeMonth: true, changeYear: true,
+                yearRange: "-10:+0"
+            });
+           
+            $(".cssdate").blur(function () {
+                if ($(this).val() != '') {
+                    if (!isValidDate($(this).val())) {
+                        alert($(this).val() + "! Sai định dạng ngày hoặc là ngày tương lai");
+                        $(this).val('');
+                    }
+                }
+            });
+          
+            function isValidDate(date) {
+                date = date.replace("/", "-");
+                var matches = /^(\d+)[-\/](\d+)[-\/](\d+)$/.exec(date);
+                if (matches == null) return false;
+                var d = matches[1];
+                var m = matches[2];
+                var y = matches[3];
+                if (y > 2100 || y < 1900) return false;
+                var composedDate = new Date(y + '/' + m + '/' + d);
+                //alert(composedDate.toDateString()+'='+new Date(new Date().toDateString()));
+                return composedDate.getDate() == d && composedDate.getMonth() + 1 == m && composedDate.getFullYear() == y && composedDate <= new Date();
+            }
+
+
+
+            $('.kiemtra').click(function () {
+                var isValid = $("#aspnetForm").valid();
+                //alert(isValid);
+                if (isValid) { return true; }
+                else {
+                    $('input:text.error:first').focus();
+                    $(".aspx, body").animate({ scrollTop: 0 }, 600);
+                    return false;
+                }
+            });
+            $(".number").keyup(function () {
+                this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
+            });
+
+            $(".csstime").keyup(function () {
+                this.value = this.value.replace(/[^:0-9\.]/g, '');
+            });
+
+        }
+
+        $(document).ready(function () {
+            khoa_divID('elementID');
+            kiemtra_batbuoc();
+        });
+
+        function check_xoa() {
+            if (confirm('Bạn có chắc chắn muốn xóa không?') == false) return false;
+        }
+        function check_gửi_email_tất_cả_NCV() {
+            if (confirm('Bạn đã chọn đúng email cần gửi chưa, chấp nhận sẽ gửi tất đến các NCV?') == false) return false;
+        }
+
+    </script>
+
+
+
+    <script type="text/javascript">
+       
+        function khoa_divID(elementID) {
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+            prm.add_beginRequest(function () {
+                waitingDialog.show('Đang xử lý ....');
+            });
+            prm.add_endRequest(function () {
+                waitingDialog.hide();
+                kiemtra_batbuoc();
+                //$('#ctl00_maincontent_GridView1').stickyTableHeaders();
+                //if ($('#top').length) { $("html, body").animate({ scrollTop: 0 }, "slow") };
+                if ($('#top').length) { $('html, body').animate({ scrollTop: $("#top").offset().top }, 1000) };
+                $('.stickyTableHeaders').stickyTableHeaders({ fixedOffset: $('.menu_top')});
+                //resoponsive_table();
+
+            });
+
+        }
+        $(document).ready(function () {
+            khoa_divID("dvGrid");
+            resoponsive_table();
+            $('.stickyTableHeaders').stickyTableHeaders({ fixedOffset: $('.menu_top') });
+            $("#tree li").each(function (index, element) {
+                //var itemDesc = $(this).children("input").val();
+                var radbtn = $(this).attr('title');
+                //alert(radbtn +'= c' + $('#ctl00_catid').text());
+                var catid = $('#ctl00_catid').text();
+                //console.log('catid='+catid);
+                if (radbtn == catid) {
+                    //alert($(this).prevAll().attr('class'));
+                    $(this).closest(".litop").removeClass("active").addClass("active")
+
+                }
+            });
+        });
+        function resoponsive_table() {
+            $('.responsive-table').each(function () {
+                var thetable = $(this);
+                $(this).find('tbody tr').each(function () {
+                    if ($(this).attr('class') == 'pgr') return false;
+                    $(this).find('td').each(function () {
+                        $(this).attr('data-heading', thetable.find('thead th:nth-child(' + ($(this).index() + 1) + ')').text());
+                    });
+
+                });
+            });
+        }
+        function chonfile() {
+            $('.upload_docs').click(function () {
+                var tên_id = "ctl00_maincontent_" + $(this).attr("id").substring(14, 200)
+                var finder = new CKFinder();
+                finder.selectActionFunction = function (fileUrl) {
+                    $("#" + tên_id).val(fileUrl);
+                    $('#ctl00_maincontent_Image_banner').attr("src", fileUrl);
+                };
+                finder.popup();
+            });
+
+        }
+
+        function hightlight(id_bang, id_hientai) {
+            $("#" + id_bang + " a").each(function () {
+                var title = $(this).attr("title");
+                var p_id = $("#" + id_hientai).text();
+                if (title == p_id) {
+                    $(this).closest("tr").css("background-color", "#ffdc87");
+                }
+            });
+        }
+        function check_confirm() {
+            if (confirm('Bạn có chắc chắn muốn xóa không?') == false) return false;
+        }
+        function hightlightrow() {
+            $("[id*='ID2']").each(function (index, element) {
+                $(element).parents('tr').removeClass('lightGreen2');
+                var gia_tri = $(element).text();
+                if (gia_tri == $("#ctl00_maincontent_ID").val() && $("#ctl00_maincontent_ID").val() != '')
+                    $(element).parents('tr').addClass('lightGreen2');
+            });
+        }
+
+
+    </script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        effect: 'fade',
+        autoplay: true,
+        autoplaySpeed: 5000,
+        infinite: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    function socialShare(type) {
+        var url = window.location.href;
+        switch (parseInt(type)) {
+            case 4:
+                window.open('http://twitter.com/share?url=' + url, '_blank');
+                break;
+            case 2:
+                window.open('https://www.linkedin.com/shareArticle?mini=true&url=' + url, '_blank');
+                break;
+            case 1:
+                window.open('https://www.facebook.com/sharer.php?u=' + url, '_blank');
+                break;
+            default:
+        }
+    }
+
+</script>
+<style>
+    a {
+        text-decoration: none !important;
+    }
+
+    .bg-primary {
+        background-color: #31676C !important;
+    }
+
+
+
+    .contentFooter a {
+        color: white !important;
+    }
+
+    #news img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .tableFloatingHeaderOriginal {
+        background-color: #146c43 !important;
+        color: white;
+    }
+
+
+    .form-control input[type="radio"] {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    td label {
+        display: contents !important;
+    }
+
+    .form-control input[type="checkbox"] {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .p130 {
+        line-height: 130%;
+    }
+
+    .p150 {
+        line-height: 130%;
+    }
+    .content_gt_bv199 img{
+        width:100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    .btn-success {
+        color: #fff !important;
+    }
+    a.edit {
+        background: url(../images/article_text.png) no-repeat;
+    }
+    a.delete {
+        background: url(../images/cancel_round.png) no-repeat;
+        cursor: pointer;
+        display: block;
+        float: left;
+        margin-left: 6px;
+        width: 16px;
+        height: 16px;
+    }
+    a.accept {
+    background: url(../images/accept_green.png) no-repeat;
+    }
+    .khung_lien {
+      float: left;
+      width: 33.33%;
+      position: relative;
+      }
+    .title_center_0 {
+          clear: both;
+          position: relative;
+          text-align: center;
+          margin: 0;
+          font-size: 26px;
+          line-height: 30px;
+          color: #2F2F2F;
+          font-family: Roboto Bold;
+          text-transform: uppercase;
+        }
+.chart{
+    background-color:#fff;
+} 
+.table {
+   background-color: #fff;
+}
+.ontop {
+    position: relative;
+    z-index: 10;
+}
+#gioithieu .khung_dv_con {
+  padding: 0px !important ;
+  box-shadow:none !important ;
+}
+#nganh_hang .khung_dv_con {
+  padding: 0px !important ;
+  box-shadow:none !important ;
+}
+input[type=radio]{
+  margin-left:20px;
+}
+input[type=checkbox]{
+  margin-right: 10px !important ;
+}
+#ctl00_maincontent_Chọn_năm label {
+  margin-left: 5px !important ;
+}
+
+ /* =====================
+ * Icon print, share
+ * ===================== */
+
+.drop-down-share .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-down-share .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    z-index: 1;
+    background: #1d2b4d;
+    right: 0px;
+    top: 40px;
+}
+
+.drop-down-share .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+	padding:5px;
+}
+
+.drop-down-share .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.icon-share-print ul li {
+    display: inline-block;
+}
+
+.icon-share-print ul {
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+.icon-share-social i {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    padding: 9px;
+    text-align: center;
+}
+
+.icon-share-social i:hover {
+	background:#fff;
+	color:#333;
+}
+
+.icon-share-print {
+    text-align: left;
+	margin-top:30px;
+}
+
+.content-block-wrapper {
+    position: relative;
+    padding-bottom: 25px;
+}
+
+
+</style>
+</html>
